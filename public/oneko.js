@@ -89,6 +89,8 @@
     nekoEl.ariaHidden = true;
     nekoEl.style.width = "32px";
     nekoEl.style.height = "32px";
+    nekoEl.style.transform = "scale(1.5)";
+    nekoEl.style.transformOrigin = "top left";
     nekoEl.style.position = "fixed";
     nekoEl.style.pointerEvents = "none";
     nekoEl.style.imageRendering = "pixelated";
