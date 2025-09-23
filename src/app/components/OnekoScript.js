@@ -1,3 +1,4 @@
+// OnekoScript.js
 "use client"; // This is a client component
 
 import { useEffect } from "react";
