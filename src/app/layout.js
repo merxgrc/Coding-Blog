@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import OnekoScript from "./components/OnekoScript"; // 👈 import the loader
 import Link from "next/link";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,18 +29,8 @@ export default function RootLayout({ children }) {
       >
         {children}
         <OnekoScript /> {/* 👈 this runs your cat script */}
-        <div className="fixed top-6 right-10 flex space-x-4"> 
-        <Link href="/tutorials" className="px-4 py-2 bg-blue-500 rounded hover:bg-red-600">
-          resume
-        </Link>
-        <Link href="/projects" className="px-4 py-2 bg-yellow-500 rounded hover:bg-yellow-600">
-          projects
-        </Link> 
-        <Link href="/tutorials" className="px-4 py-2 bg-red-500 rounded hover:bg-red-600">
-          contact
-        </Link>
-       
-      </div>
+        <NavBar />
+        <Footer />
       </body>
     </html>
   );
