@@ -6,12 +6,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-900 text-white p-10">
 
-      {/* Top navigation */}
-      <div className="fixed top-6 left-10">
-        <Link href="/" className="text-xl font-bold hover:text-blue-400">
-          Marcos Garcia
-        </Link>
-      </div>
+      
 
       
 

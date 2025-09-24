@@ -5,6 +5,8 @@ import OnekoScript from "./components/OnekoScript"; // 👈 import the loader
 import Link from "next/link";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Home from "./components/HomeButton";
+import HomeButton from "./components/HomeButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +31,7 @@ export default function RootLayout({ children }) {
       >
         {children}
         <OnekoScript /> {/* 👈 this runs your cat script */}
+        <HomeButton />
         <NavBar />
         <Footer />
       </body>
